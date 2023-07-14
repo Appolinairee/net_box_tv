@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: var(--color-dark);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+    /* COLORS */
+    --color-primary: #0c111b;
+    --color-secondary: #1e80da;
+    --color-white: rgba(255, 255, 255, 0.85);
+    --color-white-pur: rgb(255, 255, 255);
+    --color-black: rgba(0, 0, 0, 0.9);
+    --color-text: rgba(0, 0, 0, 0.7);
+
+    /* GENERAL TRANSITION */
+    --transition: all .2s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: var(--color-primary);
+    padding: 0 5%;
+    overflow-x: hidden;
+}
+
+
+.btn{
+    display: inline-block;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    background: transparent;
+    color: var(--color-dark);
+    cursor: pointer;
+    padding: 8px 15px;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.overlay{
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0 ;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.grid{
+    display: grid;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.before, .after{
+    position: relative;
+}
+
+.before::before, .after::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
 }

@@ -1,0 +1,130 @@
+section.aboutSection{
+    margin: 6rem 0;
+    gap: 2.5%;
+    color: var(--color-white-pur);
+}
+
+section.aboutSection img{
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+section.aboutSection .aboutContent{
+    
+}
+
+section.aboutSection .aboutContent span{
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+section.aboutSection .aboutContent h2{
+    font-size: 2.3rem;
+    margin: 1rem 0;
+    line-height: 40px;
+    width: 100%;
+}
+
+section.aboutSection .aboutContent p{
+    color: rgba(255, 255, 255, .7);
+    margin: 10px 0;
+}
+
+section.aboutSection .aboutStats{
+    justify-content: start;
+    gap: 10%;
+    margin-top: 40px;
+}
+
+section.aboutSection .aboutStats .aboutStat{
+    justify-content: start;
+    gap: 10%;
+}
+
+section.aboutSection .aboutStats .aboutStat .icon{
+    font-size: 4rem;
+    fill: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+section.aboutSection .aboutStats .aboutStat h3{
+    font-size: 2.5rem;
+    position: relative;
+    line-height: 45px;
+}
+
+section.aboutSection .aboutStats .aboutStat h3 span{
+    position: absolute;
+    top: -15px; right: -15px;
+    color: var(--color-secondary);
+    font-size: 20px;
+    -webkit-text-stroke: 1px;
+}
+section.aboutSection .aboutStats .aboutStat p{
+    margin-top: -5px;
+    white-space: nowrap;
+}
+
+section.aboutSection button{
+    padding: 15px 20px;
+    border-radius: 7px;
+    background: var(--color-secondary);
+    margin-top: 2rem;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+section.aboutSection button:hover{
+   gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    section.aboutSection{
+        /* padding: 5%; */
+        flex-direction: column;
+    }
+
+    section.aboutSection img{
+        width: 100%;
+        max-height: 60vh;
+    }
+
+    section.aboutSection .aboutContent{
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 480px){
+    section.aboutSection{
+        margin: 2rem 0;
+    }
+
+    section.aboutSection .aboutContent h2{
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+
+    section.aboutSection .aboutStats{
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 1rem;
+       align-items: start;
+    }
+
+}
+
+@media (max-width: 300px) {
+    section.aboutSection .aboutContent h2{
+        font-size: 1.3rem;
+    }
+
+    section.aboutSection .aboutContent p{
+        font-size: 15px;
+    }
+
+    section.aboutSection button{
+        font-size: .9rem;
+    }
+}
