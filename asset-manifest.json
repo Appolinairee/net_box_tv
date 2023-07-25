@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/net_box_tv/static/css/main.725bba23.css",
+    "main.js": "/net_box_tv/static/js/main.995e58a1.js",
+    "static/media/at-cinema.jpg": "/net_box_tv/static/media/at-cinema.b473c1af6bcd8346570d.jpg",
+    "static/media/background1.jpg": "/net_box_tv/static/media/background1.aa853942720e7cf106a3.jpg",
+    "static/media/aboutImage.jpg": "/net_box_tv/static/media/aboutImage.34a6d0eca2c2153e6cbc.jpg",
+    "static/media/programme1.jpg": "/net_box_tv/static/media/programme1.5d1fb1dcd929289c41b6.jpg",
+    "static/media/programme3.jpg": "/net_box_tv/static/media/programme3.d13d9d935829675b4168.jpg",
+    "static/media/programme4.jpg": "/net_box_tv/static/media/programme4.5794b845f10e2156e8b5.jpg",
+    "static/media/programme2.jpg": "/net_box_tv/static/media/programme2.f0ebfedceb4640d671e2.jpg",
+    "static/media/logo.svg": "/net_box_tv/static/media/logo.80fd420aaea2588c6ea5930cdec4345c.svg",
+    "index.html": "/net_box_tv/index.html",
+    "main.725bba23.css.map": "/net_box_tv/static/css/main.725bba23.css.map",
+    "main.995e58a1.js.map": "/net_box_tv/static/js/main.995e58a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.725bba23.css",
+    "static/js/main.995e58a1.js"
+  ]
+}
