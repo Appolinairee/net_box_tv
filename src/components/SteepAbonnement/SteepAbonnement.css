@@ -1,0 +1,91 @@
+.steep{
+    justify-content: space-around;
+    text-align: center;
+    margin: 8rem 5% 2rem 0rem;
+}
+
+.steep p{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--color-secondary);
+}
+
+.steep::after{
+    width: 65%;
+    left: 19%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: -20px;
+    height: 2px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.steep p::after{
+    content: attr(data);
+    width: 25px; height: 25px;
+    font-size: 16px;
+    left: 50%;
+    top: -30px;
+    border-radius: 4px;
+    color: white;
+    transform: translate(-50%, 0);
+    background: var(--color-secondary);
+    z-index: 2;
+    text-align: center;
+}
+
+.steep p.active::after{
+    background-color: gray;
+}
+
+.steep p.active{
+    color: var(--color-white-pur);
+}
+
+@media (max-width: 500px) {
+    .steep{
+        margin: 8rem 5% 0rem;
+    }
+
+    .steep p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .steep{
+        margin: 4rem 0% 1.5rem;
+    }
+
+    .steep p{
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+    .steep p:nth-child(1)::after{
+        left: 10%;
+    }
+
+    .steep p:nth-child(3)::after{
+        left: 90%;
+    }
+    
+    .steep p:nth-child(1){
+        text-align: left;
+    }
+
+    .steep p:nth-child(3){
+        text-align: right;
+    }
+
+    .steep::after{
+        width: 90%;
+        left: 5%;
+        background-color: rgba(0, 0, 0, 0.2);
+        top: -20px;
+        height: 2px;
+        border-radius: 4px;
+        z-index: 1;
+    }
+}
