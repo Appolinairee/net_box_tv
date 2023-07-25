@@ -1,7 +1,9 @@
 section.aboutSection{
     margin: 6rem 0;
     gap: 2.5%;
+    padding: 0 5%;
     color: var(--color-white-pur);
+    background: var(--color-section);
 }
 
 section.aboutSection img{
@@ -27,7 +29,7 @@ section.aboutSection .aboutContent h2{
 }
 
 section.aboutSection .aboutContent p{
-    color: rgba(255, 255, 255, .7);
+    color: var(--color-white);
     margin: 10px 0;
 }
 
@@ -72,6 +74,7 @@ section.aboutSection button{
     background: var(--color-secondary);
     margin-top: 2rem;
     font-size: 1rem;
+    color: white;
     transition: var(--transition);
 }
 
@@ -99,6 +102,7 @@ section.aboutSection button:hover{
 @media (max-width: 480px){
     section.aboutSection{
         margin: 2rem 0;
+        padding: 0 5%;
     }
 
     section.aboutSection .aboutContent h2{

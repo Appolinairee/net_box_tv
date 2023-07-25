@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './AvisNewsletter.css';
 import {LiaQuoteLeftSolid} from 'react-icons/lia'
-import {IoIosSend} from 'react-icons/io'
+import {IoIosSend} from 'react-icons/io';
+
 
 const AvisNewsletter = () => {
 
@@ -94,8 +95,18 @@ const AvisNewsletter = () => {
             }
 
         </div>
+        
+        <Newsletter />
+    </section>
+  )
+}
 
-        <div className="newsletter flex">
+
+
+const Newsletter = () => {
+  return (
+    <div>
+      <div className="newsletter flex">
             <div className="newsletterText">
                 <h3>Subscribe our Newsletter</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -109,9 +120,9 @@ const AvisNewsletter = () => {
                 </button>
             </form>
         </div>
-
-    </section>
+    </div>
   )
 }
+
 
 export default AvisNewsletter;

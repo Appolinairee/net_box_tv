@@ -1,8 +1,8 @@
 section.avisNewsetter{
-    margin: 2rem -5% 7rem;
+    margin: 2rem 0 7rem;
     background: url('../../assets/at-cinema.jpg') center/cover no-repeat;
     color: var(--color-white-pur);
-    padding: 7rem 2rem 1rem;
+    padding: 8rem 0rem 6rem;
     position: relative;
     height: 100%;
     width: 100vw;
@@ -14,7 +14,6 @@ section.avisNewsetter .aviss{
     position: relative;
     z-index: 30;
 }
-
 
 section.avisNewsetter .aviss .avis{
   width: 100%;
@@ -33,14 +32,16 @@ section.avisNewsetter .aviss .avis .icon{
 section.avisNewsetter .aviss .avis b{
   margin: 1.5rem 0;
   font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.618);
 }
 
 section.avisNewsetter .aviss .avis p{
   font-weight: bold;
+  color: white;
 }
 
 section.avisNewsetter .aviss .avis span{
-  color: rgba(255, 255, 255, 0.518);
+  color: rgba(255, 255, 255, 0.718);
   font-weight: bold;
 }
 
@@ -67,7 +68,7 @@ section.avisNewsetter .aviss .progressionBar span{
 section.avisNewsetter .newsletter{
   position: absolute;
   top: 85%;
-  left: 5%;
+  left: 4%;
   width: 90%;
   padding: 2rem;
   background: var(--color-secondary);
@@ -77,6 +78,7 @@ section.avisNewsetter .newsletter{
 
 section.avisNewsetter .newsletterText{
   line-height: 35px;
+  color: white;
 }
 
 section.avisNewsetter .newsletter h3{
@@ -98,8 +100,8 @@ section.avisNewsetter .newsletter form input{
 
 section.avisNewsetter .newsletter form .btn{
   padding: .8rem;
-  background: var(--color-white-pur);
-  color: var(--color-secondary);
+  background: white;
+  color: #0c111b;
   font-size: .8rem;
   border-radius: 7px;
   gap: 5px;
@@ -142,8 +144,8 @@ section.avisNewsetter .overlay{
   section.avisNewsetter .newsletter{
     flex-direction: column;
     text-align: center;
+    left: 3%;
     width: 92%;
-    left: 2.5%;
   }
 
   section.avisNewsetter .newsletter form{
@@ -173,6 +175,7 @@ section.avisNewsetter .overlay{
     white-space: wrap;
     padding: 1rem .5rem;
     width: 94%;
+    left: 3%;
   }
 
   section.avisNewsetter .aviss .avis{
@@ -187,7 +190,7 @@ section.avisNewsetter .overlay{
   }
 
   section.avisNewsetter{
-    margin: 2rem -5% 100%;
+    margin: 2rem 0% 100%;
 }
 
   section.avisNewsetter .newsletter h3{

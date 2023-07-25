@@ -24,7 +24,7 @@ const AboutSection = () => {
             <img src={AboutImage} alt="Image d'illustration de l'entreprise" />
 
             <div className="aboutContent">
-                <span>About Us</span>
+                <span>Nous concernant</span>
                 <h2>We Giving The Best Experience to Watching Your Favorite Movie</h2>
 
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -47,7 +47,7 @@ const AboutSection = () => {
                     </div>
                 </div>
 
-                <button className='btn'> About Us <BsArrowRight className='icon' /></button>
+                <button className='btn'> Nous contacter <BsArrowRight className='icon' /></button>
             </div>
         </section>
     )

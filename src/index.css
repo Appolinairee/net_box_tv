@@ -14,11 +14,29 @@
 :root{
     /* COLORS */
     --color-primary: #0c111b;
-    --color-secondary: #1e80da;
+    --color-secondary: #6A287E;
+    /* --color-secondary: rgb(208, 48, 208); */
     --color-white: rgba(255, 255, 255, 0.85);
     --color-white-pur: rgb(255, 255, 255);
     --color-black: rgba(0, 0, 0, 0.9);
     --color-text: rgba(0, 0, 0, 0.7);
+    --color-body: #0c111b;
+    --color-section: transparent;
+
+    /* GENERAL TRANSITION */
+    --transition: all .2s ease;
+}
+
+body .app.theme{
+    /* COLORS */
+    --color-primary: white;
+    --color-secondary: #6A287E;
+    --color-white: rgba(0, 0, 0, 0.85);
+    --color-white-pur: #0c111b;
+    --color-black: rgba(0, 0, 0, 0.9);
+    --color-text: rgba(0, 0, 0, 0.7);
+    --color-body: white;
+    --color-section: white;
 
     /* GENERAL TRANSITION */
     --transition: all .2s ease;
@@ -31,9 +49,11 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background: var(--color-primary);
-    padding: 0 5%;
     overflow-x: hidden;
+}
+
+body .app{
+    background: var(--color-body);
 }
 
 
