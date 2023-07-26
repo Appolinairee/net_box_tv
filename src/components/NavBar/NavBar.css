@@ -35,7 +35,7 @@ nav .navbar{
     font-weight: bold;
     font-size: 19px;
     max-width: 150px;
-    word-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .logo img{

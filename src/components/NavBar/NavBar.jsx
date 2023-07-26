@@ -64,7 +64,7 @@ const Navbar = ( { themeFunction, themeState } ) => {
                 <div className="navbar flex">
                     <div className="logo flex">
                         <img src={Logo} alt="Logo Nom de l'entreprise" />
-                        <span>NET BOX</span>
+                        <span>NET BOX TV</span>
                     </div>
 
                     <ul className="bar flex">
@@ -98,7 +98,7 @@ const Navbar = ( { themeFunction, themeState } ) => {
                         
                         <div className="logo flex">
                             <img src={Logo} alt="Logo Nom de l'entreprise" />
-                            <span>NET BOX</span>
+                            <span>NET BOX TV</span>
                         </div>
 
                         <div className="menuReduceScreen">
