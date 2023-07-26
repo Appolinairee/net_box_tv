@@ -141,7 +141,7 @@
     .chainesListing .categories{
         padding: 20px 5px 10px;
         top: 4.5rem;
-        left: 5%;
+        left: 3%;
     }
 
     .chainesListing .categories .categorie{
@@ -155,7 +155,7 @@
 
 @media (max-width: 480px){
     .chainesListing .categories{
-        padding: 10px 0px 10px;
-        top: 4rem;
+        padding: 13px 0px 10px;
+        top: 3.6rem;
     }
 } 

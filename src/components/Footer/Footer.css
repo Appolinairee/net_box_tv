@@ -140,7 +140,7 @@ footer.footer .footerSub p{
     }
 
     footer.footer .footerContent .icons{
-        width: 90%;
+        max-width: 90%;
         margin: 20px 0;
     }
 
@@ -148,6 +148,7 @@ footer.footer .footerSub p{
         font-size: 6rem;
         padding: 7px 0;
         max-height: 35px;
+        max-width: 35px;
     }
 
     footer.footer .footerSub{

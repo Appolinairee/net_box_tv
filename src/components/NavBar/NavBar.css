@@ -281,6 +281,11 @@ nav .menu .menuReduceScreen .bar{
         padding: 0 0 2rem;
     }
 
+    .logo{
+        border-radius: 7px;
+        font-size: 17px;
+    }
+
     nav .nav{
         padding: .6rem 5px .2rem;
         background-color: var(--color-primary);

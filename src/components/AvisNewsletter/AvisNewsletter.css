@@ -167,12 +167,12 @@ section.avisNewsetter .overlay{
   section.avisNewsetter .newsletter{
     top: 85%;
     padding: 1rem;
+    white-space: wrap;
   }
 }
 
 @media (max-width: 480px) {
   section.avisNewsetter .newsletter{
-    white-space: wrap;
     padding: 1rem .5rem;
     width: 94%;
     left: 3%;

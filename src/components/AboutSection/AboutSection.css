@@ -37,6 +37,7 @@ section.aboutSection .aboutStats{
     justify-content: start;
     gap: 10%;
     margin-top: 40px;
+    overflow-x: hidden;
 }
 
 section.aboutSection .aboutStats .aboutStat{
