@@ -34,7 +34,8 @@ nav .navbar{
     color: white;
     font-weight: bold;
     font-size: 19px;
-    max-width: 150px;
+    width: fit-content;
+    max-width: 200px;
     white-space: nowrap;
 }
 
