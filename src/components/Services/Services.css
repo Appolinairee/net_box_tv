@@ -87,7 +87,7 @@ section.services .servicesContent .serviceContent:hover h3{
 
 @media (max-width: 500px) {
     section.services{
-        padding: 0 2.5%;
+        padding: 0 5%;
     }
     
     section.services .servicesContent{
@@ -98,7 +98,6 @@ section.services .servicesContent .serviceContent:hover h3{
 
 
 @media (max-width: 470px) {
-
     section.services p.description{
         width: 100%;
         font-size: 15px;
@@ -110,6 +109,11 @@ section.services .servicesContent .serviceContent:hover h3{
 
     section.services .servicesTitle p{
         font-size: 13px;
+    }
+
+    section.services .servicesContent{
+        white-space: wrap;
+        white-space: wrap;
     }
 
     section.services .servicesContent .serviceContent{
