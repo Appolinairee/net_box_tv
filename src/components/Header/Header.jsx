@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import SlidesIndicators from '../SlidesIndicators/SlidesIndicators';
 import Background from "../../assets/background1.jpg";
+import Button from '../Button/Button';
+import Lottie from 'lottie-react';
+import animationData from '../../assets/play button.json';
 
 import { BsFillPlayFill } from "react-icons/bs";
-import { BsArrowLeft } from "react-icons/bs";
-import { BsArrowRight } from "react-icons/bs";
 
 const Header = () => {
 
@@ -52,7 +54,10 @@ const Header = () => {
             setCurrentslide(n? 1 : Slides.length-1);
         else
         setCurrentslide(n? currentslide+1: ((currentslide !== 1)? currentslide-1: Slides.length));
+    }
 
+    const ChangeSlide = (k) => {
+        setCurrentslide(k);
     }
 
   return (
@@ -76,11 +81,11 @@ const Header = () => {
                             <div className="headerDetails flex">
 
                                 <Link to="/decodeur">
-                                    <button className="btn btn1">Décodeur</button>
+                                    <Button title="Décodeur" nonAnimation={true} />
                                 </Link>
                                 <Link to="/abonnement">
                                     <button className="btn btn2">
-                                        <BsFillPlayFill className="icon" />
+                                        <Lottie animationData={animationData} className="icon" />
                                         <span>Abonnement</span>
                                     </button>
                                 </Link>
@@ -94,21 +99,7 @@ const Header = () => {
             }
         </section>
 
-        <div className="slideState flex">
-            <BsArrowLeft className='icon' onClick={ () => handleManual(0) }/>
-
-                <div className="buttons flex">
-                    { Slides.map ((index, k) => ( 
-                        <span key={index} onClick={ ()=> setCurrentslide(parseInt(k+1)) } style={ {
-                            background: ((k+1) === currentslide)? 'white': '', 
-                            padding: ((k+1) === currentslide)? '3px 7px': '3px',
-                            borderRadius: ((k+1) === currentslide)? '7px': '50%'
-                        } }></span>
-                     )) }
-                </div>
-
-            <BsArrowRight className='icon' onClick={ () => handleManual(1) } />
-        </div>
+        <SlidesIndicators FollowingState={handleManual} ChangeState={ChangeSlide} CurrentSlide={currentslide} Slides={Slides} />
     </div>
   )
 }

@@ -5,19 +5,16 @@ section.services{
     background: var(--color-section);
 }
 
-section.services h3{
-    color: var(--color-secondary);
-}
-
 section.services .servicesTitle{
-    margin: .5rem 0;
-    font-size: 1.3rem;
+    margin: 0rem 0 .5rem;
+    font-size: 1.7rem;
     align-items: center;
-    white-space: nowrap;
+    white-space: wrap;
+    flex-wrap: wrap;
+    color: var(--color-secondary);
 }
 
 section.services .servicesTitle p{
-    color: var(--color-secondary);
     font-size: 16px;
     gap: .5rem;
     transition: var(--transition);
@@ -42,6 +39,7 @@ section.services .servicesContent{
     width: 100%;
     text-align: center;
     gap: 3%;
+    margin-bottom: 50px;
 }
 
 section.services .servicesContent .serviceContent{
@@ -72,7 +70,7 @@ section.services .servicesContent .serviceContent h3{
 }
 
 section.services .servicesContent .serviceContent:hover h3{
-   color: var(--color-white-pur);
+   color: white;
 }
 
 @media (max-width: 900px) {
@@ -85,14 +83,14 @@ section.services .servicesContent .serviceContent:hover h3{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     section.services{
         padding: 0 5%;
     }
     
     section.services .servicesContent{
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.7rem;
     }
 }
 
@@ -104,7 +102,7 @@ section.services .servicesContent .serviceContent:hover h3{
     }
 
     section.services .servicesTitle{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     section.services .servicesTitle p{

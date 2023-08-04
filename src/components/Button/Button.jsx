@@ -5,7 +5,7 @@ import {AiOutlineArrowRight} from 'react-icons/ai';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Button = ({title}) => {
+const Button = ({title, nonAnimation}) => {
 
   useEffect(() => {
     AOS.init({
@@ -17,7 +17,7 @@ const Button = ({title}) => {
   }, []);
 
   return (
-    <button data-aos="zoom-in" className='flex btnComponent' type="submit"> {title} <AiOutlineArrowRight /></button>
+    <button data-aos={nonAnimation? "" :"zoom-in"} className='flex btnComponent' type="submit"> {title} <AiOutlineArrowRight /></button>
   )
 }
 

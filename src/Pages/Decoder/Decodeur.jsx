@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../components/AbonnementForm/AbonnementForm.css';
 import TransitionEffect from '../../components/TransitionEffect/TransitionEffect';
 
@@ -15,7 +15,30 @@ import ChaineImage2 from "../../assets/programme2.jpg";
 import ChaineImage3 from "../../assets/programme3.jpg";
 import ChaineImage4 from "../../assets/programme4.jpg";
 
+import {
+    openKkiapayWidget,
+    addKkiapayListener,
+    removeKkiapayListener,
+} from "kkiapay";
+
 const Decodeur = () => {
+
+    function open() {
+        openKkiapayWidget({
+          amount: 25000,
+          api_key: process.env.REACT_APP_API_KEY,
+          sandbox: true,
+          email: "randomgail@gmail.com",
+          phone: "97000000"
+        });
+    }
+
+    useEffect(() => {
+        addKkiapayListener('success',() => console.log("Sucess"));
+        return () => {
+          removeKkiapayListener('success', () => console.log("Sucessful removed"))
+        };
+    }, []);
 
     const Channels = [
         {
@@ -103,7 +126,7 @@ const Decodeur = () => {
             
             <p style={{ textAlign: 'center' }}>!! Paiement de 30.000 Fcfa pour votre décodeur</p>
             
-            <button className='flex' type="submit"> Valider <AiOutlineArrowRight /></button>
+            <button className='flex' type="submit" onClick={open}> Valider <AiOutlineArrowRight /></button>
         </div>
 
         <ChannelsPresentation Channels={Channels} Services={Services} Titre="Votre décodeur + 1 mois d'abonnement gratuit"/>

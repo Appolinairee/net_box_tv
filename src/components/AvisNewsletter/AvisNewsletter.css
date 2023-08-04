@@ -125,7 +125,6 @@ section.avisNewsetter .overlay{
 @media (max-width: 1100px) {
 
   section.avisNewsetter .newsletter{
-    white-space: nowrap;
     padding: 2rem 1rem;
   }
 
@@ -167,7 +166,6 @@ section.avisNewsetter .overlay{
   section.avisNewsetter .newsletter{
     top: 85%;
     padding: 1rem;
-    white-space: wrap;
   }
 }
 
@@ -200,6 +198,7 @@ section.avisNewsetter .overlay{
   section.avisNewsetter .newsletter p{
     font-size: 1rem;
     line-height: 25px;
+    white-space: wrap;
   }
 
   section.avisNewsetter .newsletter form {

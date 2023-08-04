@@ -73,74 +73,28 @@
     margin-top: 35px;
 }
 
-.header .headerContent .headerDetails .btn1{
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 0px 25px;
-    font-size: 17px;
-    height: 45px;
+
+.header .headerContent .headerDetails .btn2{
     transition: var(--transition);
 }
 
-.header .headerContent .headerDetails .btn1:hover{
-    color: var(--color-black);
-    background: rgb(255, 255, 255);
-    font-size: 19px;
-    transform: scale(.95);
-}
-
-
 .header .headerContent .headerDetails .btn2 .icon{
-    border: .5px solid rgb(255, 255, 255);
-    font-size: 4rem;
-    padding: 10px 10px 10px 15px;
-    border-radius: 50%;
-    background: #0c111b;
+    font-size: 1rem;
+    width: 80px;
+    height: 80px;
 }
 
 .header .headerContent .headerDetails .btn2 span{
     font-size: 16px;
-    transition: var(--transition);
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: translateX(-20px);
 }
 
-.header .headerContent .headerDetails .btn2:hover span{
-    letter-spacing: 2px;
+.header .headerContent .headerDetails .btn2:hover{
+    transform: scale(1.1);
 }
 
-.slides .slideState{
-    position: absolute;
-    justify-content: space-between;
-    bottom: 1.5rem; left: 9%;
-    gap: .6rem;
-    align-items: center;
-}
-
-.slides .slideState .buttons{
-    gap: 8px;
-}
-
-.slides .slideState span{
-    position: relative;
-    width: 5px;
-    border: .3px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    padding: 3px;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.slides .slideState .icon{
-    fill: rgb(255, 255, 255);
-    border: .3px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    padding: 3px 5px;
-    font-size: 1.5rem;
-}
-
-.slides .slideState .icon:hover{
-    background-color: rgb(255, 255, 255);
-    fill: #0c111b;
-}
 
 @media (max-width: 1000px) {
     .header .headerContent p{
@@ -182,32 +136,23 @@
         margin-top: 45px;
     }
 
-    .header .headerContent .headerDetails .btn1{
-        padding: 0px 10px;
-        height: 35px;
-        font-size: 16px;
-    }
-
-    .header .headerContent .headerDetails .btn1:hover{
-        font-size: 15px;
+    .header .headerContent .headerDetails .btn2{
+        transform: translateX(-20px);
     }
 
     .header .headerContent .headerDetails .btn2 .icon{
-        padding: 5px 5px 5px 8px;
-        font-size: 2rem;
+        padding: 8px 10px;
+        font-size: 3rem;
     }
 
-    .header .headerContent .headerDetails .btn1{
-        padding: 0 15px;
-        height: 40px;
-    }
-
-    .header .headerContent .headerDetails .btn2:hover span{
-        letter-spacing: 0;
+    .header .headerContent .headerDetails .btn2 span{
+        font-size: 16px;
+        text-transform: capitalize;
+        transform: translateX(-30px);
     }
 }
 
-@media (max-width: 325px) {
+@media (max-width: 350px) {
     .header .headerContent{
         top: 5%;
     }

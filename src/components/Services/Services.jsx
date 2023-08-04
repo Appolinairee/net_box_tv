@@ -46,10 +46,10 @@ const Services = () => {
 
   return (
     <section className="services">
-        <h3 className="sectionName">Fonctionnalités</h3>
+        <h3 className="sectionName">Net Box TV</h3>
 
         <div className="servicesTitle flex">
-            <h2  data-aos="fade-right" data-aos-duration="900">Net Box TV</h2>
+            <h2 data-aos="fade-right" data-aos-duration="900">Fonctionnalités</h2>
             <p className='flex'>View More <BsArrowRight className='icon' /></p>
         </div>
 

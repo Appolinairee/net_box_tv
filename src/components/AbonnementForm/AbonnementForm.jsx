@@ -24,7 +24,7 @@ const AbonnementForm = ({Channels, Services, Id}) => {
     function open() {
         openKkiapayWidget({
           amount: price,
-          api_key: "931b3d60048911ed995cd39f617b9df2",
+          api_key: process.env.REACT_APP_API_KEY,
           sandbox: true,
           email: "randomgail@gmail.com",
           phone: "97000000"
